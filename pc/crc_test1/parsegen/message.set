@@ -1,5 +1,20 @@
 // msg name: id : datafiled1[size in bits]:datafiled2[size in bits] ....
-gpiosetup	: 0 : use[8]:io[8]
-gpioout		: 1 : use[8]:hl[8]
-gpioin		: 2 : use[8]
-gpioinnotify: 3 : use[8] : risefall[8]
+//gpiosetup	: 0 : use[8]:io[8]
+//gpioout		: 1 : use[8]:hl[8]
+//gpioin		: 2 : use[8]
+//gpioinnotify: 3 : use[8] : risefall[8]
+
+// name: id : tx elements[size in bits] < rx elements [size in bits]
+// n*size in bits array of n elements
+version:0:req[0]<ver_nr[8]
+test_led:1:blink_delay_ms[8]<ack[0]
+
+i2c_setup:2:channel[2]:speed[2]<ack[0]
+i2c_inout:3:channel[2]:tx_len[8]:rx_len[8]:tx_data[5*8]<rx_data[5*8]
+
+gpio_setup:4:in_out[4]:pup[4]:pdn[4]:pp[4]:hl[4]<ack[0]
+gpio_in:5:req[0]<state[4]
+gpio_out:6:hl[4]<ack[0]
+
+uart_rx:7:req[0]<len[8]:rx_data[5*8]
+

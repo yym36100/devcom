@@ -30,7 +30,7 @@ typedef enum {
 	uart_rx,
 
 	version,
-	test_led,
+	test_led, // req: blink freq resp: ack
 
 	max_id,
 } eids;
