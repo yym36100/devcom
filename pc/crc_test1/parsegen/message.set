@@ -2,4 +2,4 @@
 gpiosetup	: 0 : use[8]:io[8]
 gpioout		: 1 : use[8]:hl[8]
 gpioin		: 2 : use[8]
-gpioinnotify: 3 : use[8]
+gpioinnotify: 3 : use[8] : risefall[8]

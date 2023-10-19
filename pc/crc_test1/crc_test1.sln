@@ -5,6 +5,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "crc_test1", "crc_test1\crc_
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "parsegen", "parsegen\parsegen.vcproj", "{78E260CF-46F3-48F4-BEF3-ADFB39905506}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "protoparse", "protoparse\protoparse.vcproj", "{0D4E054A-D1A0-4423-9887-A8E60C0628C4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Win32 = Debug|Win32
@@ -19,6 +21,10 @@ Global
 		{78E260CF-46F3-48F4-BEF3-ADFB39905506}.Debug|Win32.Build.0 = Debug|Win32
 		{78E260CF-46F3-48F4-BEF3-ADFB39905506}.Release|Win32.ActiveCfg = Release|Win32
 		{78E260CF-46F3-48F4-BEF3-ADFB39905506}.Release|Win32.Build.0 = Release|Win32
+		{0D4E054A-D1A0-4423-9887-A8E60C0628C4}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0D4E054A-D1A0-4423-9887-A8E60C0628C4}.Debug|Win32.Build.0 = Debug|Win32
+		{0D4E054A-D1A0-4423-9887-A8E60C0628C4}.Release|Win32.ActiveCfg = Release|Win32
+		{0D4E054A-D1A0-4423-9887-A8E60C0628C4}.Release|Win32.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
