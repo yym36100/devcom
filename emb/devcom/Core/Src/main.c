@@ -77,6 +77,13 @@ static void MX_USART2_UART_Init(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
+void __cyg_profile_func_enter (void *this_fn, void *call_site){}
+void __cyg_profile_func_exit  (void *this_fn, void *call_site){}
+
+void __gcov_init(void){}
+void __gcov_exit(void){}
+void __gcov_merge_add(void){}
+
 /* USER CODE END 0 */
 
 /**
