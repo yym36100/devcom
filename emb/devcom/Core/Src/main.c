@@ -84,6 +84,8 @@ void __gcov_init(void){}
 void __gcov_exit(void){}
 void __gcov_merge_add(void){}
 
+void _init(){}
+
 /* USER CODE END 0 */
 
 /**
@@ -189,8 +191,10 @@ void SystemClock_Config(void)
 /**
   * @brief ADC1 Initialization Function
   * @param None
-  * @retval None
+  * @retval None "alma" a !=fa alatt nyari 'fd' "sd`'  <W> <a> << A >> >= ~=
+  *  .- .. .= :: ** *** |> <| <~~
   */
+
 static void MX_ADC1_Init(void)
 {
 
@@ -213,6 +217,10 @@ static void MX_ADC1_Init(void)
   hadc1.Init.ExternalTrigConv = ADC_SOFTWARE_START;
   hadc1.Init.DataAlign = ADC_DATAALIGN_RIGHT;
   hadc1.Init.NbrOfConversion = 1;
+  /**
+   *
+   */
+  // ---- ad->df >----------->---->   >----<  <--->  *----* <=========> |--> !: !. \/ /\ ??= ?<:> <:> ------
   if (HAL_ADC_Init(&hadc1) != HAL_OK)
   {
     Error_Handler();
